@@ -1,0 +1,24 @@
+{
+    "model_name": "intfloat/multilingual-e5-large",
+    "batch_size": 16, 
+    "max_len": 512,
+    "model_config": {
+        "num_classes": 2,
+        "dropout_rate": 0.5,
+        "feat_dim": 1024,
+        "is_average": true
+    },
+    "trainer_config": {
+        "lr": 5e-07,
+        "n_epochs": 10,
+        "weight_decay": 0.07,
+        "device": "cuda", 
+        "seed": 42, 
+        "weights": null, 
+        "label_smoothing": 0.0, 
+        "num_steps": 15000
+    },
+    "train_path": null,
+    "test_path": "../data/imdb_csv/imdb_new_reviews_v2.csv",
+    "create_val": false
+}
